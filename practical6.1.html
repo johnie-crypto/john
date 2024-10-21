@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pimp My Shoes Contest Entry Form</title>
+    <style>
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            text-align: center;
+            text-decoration: solid;
+            color: black;
+        }
+       
+        .features input {
+            margin-right: 5px;
+        }
+        
+        input[type="submit"],
+                input[type="reset"]
+                {
+                    padding: 10px 20px;
+                    background-color: #4caf50;
+                    color: white;
+                    border:none;
+                    cursor: pointer;
+                    border-radius: 20px;
+
+                }
+                body{
+                    background-color: beige;
+                  padding: auto;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>"Pimp My Shoes" Contest Entry Form</h2>
+        <p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <i>to got</i>  and you may be one of ten lucky winners.</p>
+
+        <div class="section">
+            <h3>Contest Entry Information</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="phone">Telephone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <br>
+
+                <label for="reason">My shoes are SO old...</label><br>
+                <textarea id="reason" name="reason" rows="4" maxlength="100"></textarea>
+
+                <h3>Design your custom Forcefields:</h3>
+                <div class="section">
+                    <h4>Custom Shoe Design</h4>
+                    <p>Color (choose one):</p>
+                    
+                    <br>
+                    <input type="radio"name="color" value="red">Red
+                    <br>
+                    <input type="radio"name="color" value="blue">Blue
+                    <br>
+                    <input type="radio"name="color" value="black">Black
+                    <br>
+                    <input type="radio"name="color" value="silver">Silver
+                    <br>
+                   
+                </div>
+
+                <div class="section">
+                    <h4>Features (Choose as many as you want):</h4>
+                    <input type="checkbox"name="features" value="sparkly_laces">Sparkly_laces
+                    <br>
+                    <input type="checkbox"name="features" value="metaalic_logo">Metallic_logo
+                    <br>
+                    <input type="checkbox"name="features" value="light_up_heels">Light_up_heels
+                    <br>
+                    <input type="checkbox"name="features" value="mp3_enabled">Mp3_eabled
+                    <br>
+                </div>
+
+                <div class="section">
+                    <h4>Size:</h4>
+                    <label for="size">Sizes reflect standard men's sizes:</label>
+                    <select id="size" name="size">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <input type="submit"value="pimp my shoes!">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
